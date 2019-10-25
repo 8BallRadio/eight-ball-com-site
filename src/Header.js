@@ -1,22 +1,37 @@
 import React from 'react';
 import logo from './assets/image/logo.png';
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
 import './App.css';
 
 function Header () {
     return(
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-                Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Learn React
-            </a>
+            <nav className="app-nav">
+                <div>
+                    <Link to="/">
+                        <img src={logo} className="App-logo" alt="logo" />
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/about"> About </Link>
+                </div>
+                <div>
+                    <Link to="/donate"> Donate </Link>
+                </div>
+                <div>
+                    <Link to="/calendar"> Calendar </Link>
+                </div>
+                <div>
+                    <Link to="/volunteer"> Volunteer </Link>
+                </div>
+            </nav>
         </header>
     )
 };
