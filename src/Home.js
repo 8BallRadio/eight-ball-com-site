@@ -1,12 +1,12 @@
 import React from 'react';
-
+import ZineFairs from './ZineFairs';
+import Teams from './Teams';
 
 function Home () {
     return(
         <div>
-            <h2>Home</h2>
-            <h2>Teams</h2>
-            <h2>Zine Fairs</h2>
+            <Teams />
+            <ZineFairs />
             <h2>Merch</h2>
             <h2>Installations</h2>
             <h2>Events</h2>

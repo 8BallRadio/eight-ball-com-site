@@ -1,12 +1,14 @@
-.App {
-  /*text-align: center; */
-  background-color: #56d817;
-  height: 100vh;
-}
-
 a {
   color:black;
   text-decoration: none;
+}
+
+body {
+  background-color: #56d817;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-logo {
@@ -15,6 +17,7 @@ a {
 
 .App-header {
   position: fixed;
+  font-family: 'Courier New', Courier, monospace;
   top: 0;
   width: 100%;
   background-color: #56d817;
@@ -37,4 +40,17 @@ a {
 .content {
   padding: 16px;
   padding-top:102px;  
+}
+
+.fair-card {
+  /*border: 1px solid black; */
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.fairs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
